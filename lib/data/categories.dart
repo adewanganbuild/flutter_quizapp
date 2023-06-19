@@ -13,7 +13,7 @@ final categories = <Category>[
     description: 'Practice questions from various chapters in physics',
   ),
   Category(
-    questions: questions,
+    questions: questionsChem,
     imageUrl: 'assets/chemistry.png',
     categoryName: 'Chemistry',
     backgroundColor: Colors.orange,

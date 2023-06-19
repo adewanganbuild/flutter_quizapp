@@ -66,7 +66,6 @@ class OptionsWidget extends StatelessWidget {
   Color getColorForOption(Option option, Question question) {
     final isSelected = option == question.selectedOption;
 
-    print("getColorForOption " + isSelected.toString());
     if (!isSelected) {
       return Colors.grey.shade200;
     } else {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:revvit/page/category_page.dart';
 import 'package:revvit/data/categories.dart';
+import 'package:revvit/page/home_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(primarySwatch: Colors.deepOrange),
-        home: CategoryPage(category: categories.first),
+        home: HomePage(),
+        // home: CategoryPage(category: categories.first),
       );
 }

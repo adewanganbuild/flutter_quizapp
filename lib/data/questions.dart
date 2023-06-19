@@ -78,3 +78,29 @@ final questions = [
     solution: 'Uruguay was the first country to win world cup',
   ),
 ];
+
+final questionsChem = [
+  Question(
+    text: 'Chemistry questions ...',
+    options: [
+      Option(code: 'A', text: 'Earth', isCorrect: false),
+      Option(code: 'B', text: 'Venus', isCorrect: true),
+      Option(code: 'C', text: 'Jupiter', isCorrect: false),
+      Option(code: 'D', text: 'Saturn', isCorrect: false),
+    ],
+    solution: 'Venus is the hottest planet in the solar system',
+  ),
+];
+
+final questionsMaths = [
+  Question(
+    text: 'Maths questions ...',
+    options: [
+      Option(code: 'A', text: 'Earth', isCorrect: false),
+      Option(code: 'B', text: 'Venus', isCorrect: true),
+      Option(code: 'C', text: 'Jupiter', isCorrect: false),
+      Option(code: 'D', text: 'Saturn', isCorrect: false),
+    ],
+    solution: 'Venus is the hottest planet in the solar system',
+  ),
+];

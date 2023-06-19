@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:revvit/page/options_widget.dart';
+import 'package:revvit/widget/options_widget.dart';
 
 import 'package:revvit/model/category.dart';
 import 'package:revvit/model/option.dart';
@@ -23,6 +23,7 @@ class QuestionsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) => PageView.builder(
         onPageChanged: onChangedPage,
+        controller: controller,
         itemCount: category.questions.length,
         itemBuilder: (context, index) {
           final question = category.questions[index];
