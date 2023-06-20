@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfire_ui/auth.dart';
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
               child: Container(
                   padding: EdgeInsets.all(16),
                   alignment: Alignment.centerLeft,
-                  child: buildWelcome("Ashish")),
+                  child: buildWelcome(FirebaseAuth.instance.currentUser!.uid)),
             ),
             flexibleSpace: Container(
               decoration: BoxDecoration(

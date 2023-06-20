@@ -41,7 +41,7 @@ class CategoryDetailWidget extends StatelessWidget {
         decoration: BoxDecoration(
           color: category.backgroundColor,
           borderRadius: BorderRadius.circular(15),
-          image: DecorationImage(image: AssetImage(category.imageUrl)),
+          //image: DecorationImage(image: AssetImage(category.imageUrl)),
         ),
       );
 }

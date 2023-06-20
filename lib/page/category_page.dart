@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:revvit/model/category.dart';
 import 'package:revvit/model/option.dart';
 import 'package:revvit/model/question.dart';
+import 'package:revvit/model/result.dart';
 import 'package:revvit/widget/questions_widget.dart';
 import 'package:revvit/widget/question_numbers_widget.dart';
 
@@ -24,6 +25,7 @@ class _CategoryPageState extends State<CategoryPage> {
 
     controller = PageController();
     question = widget.category.questions.first;
+    Category.getCategoriesFromFirestore();
   }
 
   @override
@@ -38,6 +40,8 @@ class _CategoryPageState extends State<CategoryPage> {
       );
 
   void selectOption(Option option) {
+    // print("clicked selectOption");
+    // Result.saveResult();
     if (question!.isLocked) {
       return;
     } else {
@@ -49,6 +53,8 @@ class _CategoryPageState extends State<CategoryPage> {
   }
 
   void nextQuestion({int index = 0, bool jump = false}) {
+    // print('nextQuestion called...');
+    // Result.saveResult();
     double currPage = 0;
     if (controller!.page != null) currPage = controller!.page as double;
     final nextPage = currPage + 1;
@@ -69,6 +75,7 @@ class _CategoryPageState extends State<CategoryPage> {
           SizedBox(
             width: 16,
           ),
+          //GuestBook(addMessage: (message) => print(message)),
         ],
         flexibleSpace: Container(
           decoration: BoxDecoration(
