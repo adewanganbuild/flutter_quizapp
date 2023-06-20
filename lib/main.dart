@@ -1,8 +1,10 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:revvit/page/category_page.dart';
-import 'package:revvit/data/categories.dart';
+import 'package:revvit/firebase_options.dart';
 import 'package:revvit/page/home_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:revvit/widget/auth_gate.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,6 +12,10 @@ Future<void> main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   runApp(const MyApp());
 }
@@ -24,7 +30,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(primarySwatch: Colors.deepOrange),
-        home: HomePage(),
+        home: const AuthGate(),
+        // home: HomePage(),
         // home: CategoryPage(category: categories.first),
       );
 }

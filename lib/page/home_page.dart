@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterfire_ui/auth.dart';
 
 import 'package:revvit/data/categories.dart';
 import 'package:revvit/page/category_page.dart';
@@ -30,7 +31,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             actions: [
-              Icon(Icons.search),
+              // Icon(Icons.search),
+              // Icon(Icons.logout),
+              SignOutButton(),
               SizedBox(width: 12),
             ]),
         body: ListView(

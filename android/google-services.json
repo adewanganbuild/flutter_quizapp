@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "767922912809",
+    "project_id": "revvit-fa46c",
+    "storage_bucket": "revvit-fa46c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767922912809:android:c93f1a8fdde3f07ec72638",
+        "android_client_info": {
+          "package_name": "com.revvit.quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767922912809-v7eiou6ittdad3od8fbg9av10kmqi30a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3R4M8LGhaxPiwsnV8pm_HYywJvwmkQYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767922912809-v7eiou6ittdad3od8fbg9av10kmqi30a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
