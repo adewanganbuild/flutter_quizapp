@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:revvit/model/category.dart';
 import 'package:revvit/model/option.dart';
 import 'package:revvit/model/question.dart';
-import 'package:revvit/model/result.dart';
+//import 'package:revvit/model/result.dart';
 import 'package:revvit/widget/questions_widget.dart';
 import 'package:revvit/widget/question_numbers_widget.dart';
 

@@ -25,5 +25,10 @@ git remote add origin https://github.com/adewanganbuild/flutter_quizapp.git
 git push -u origin main
 
 Youtube links for tutorials: 
-https://www.youtube.com/watch?v=pSKG8QZoqic
+Tutorial 1: https://www.youtube.com/watch?v=gSvd-i0JSsU
+Tutorial 2: https://www.youtube.com/watch?v=pSKG8QZoqic
+Tutorial 3: https://firebase.google.com/codelabs/firebase-auth-in-flutter-apps#2 [Firebase flutter integration]
+Tutorial 4: https://firebase.google.com/docs/hosting/frameworks/flutter [Enable web hosting/Integrate Flutter web]
+
+
 
